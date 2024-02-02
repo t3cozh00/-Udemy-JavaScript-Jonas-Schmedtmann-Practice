@@ -35,6 +35,7 @@ while (dice !== 6 ){
         You rolled a 3
         You rolled a 4
         You rolled a 3
+        You rolled a 3
         The first output shows after rolling two times, it get a 6, so the loop stops; the second rolling for 6 time to get a 6 to stop rolling 
     */
 
