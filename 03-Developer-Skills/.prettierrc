@@ -1,0 +1,8 @@
+/*
+to configure prettier
+use single queotes instead of double quotes
+*/
+
+{
+    "singleQuote" : true
+}
