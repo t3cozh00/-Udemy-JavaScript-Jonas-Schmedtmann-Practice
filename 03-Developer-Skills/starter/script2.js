@@ -156,4 +156,39 @@ console.log(calcTempAmplitudeBug(c11, c22));
 
    TEST DATA 1: [17, 21, 23]
    TEST DATA 2: [12, 5, -5, 0, 4]
+
+   // 1) Understanding the problem
+   // - array transformed to string, seperated by ...
+   // - what is the x days ? Answer: index + 1
+
+   // 2) Breaking up into sub-problems
+   // - transform array into string
+   // - transform each element to string with ºC
+   // - string needs to contain day (index + 1)
+   // - add ... between elements and start and end of string
+   // - log string to console
 */
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+console.log(`p57_1: ...${data1[0]}ºC...${data1[1]}ºC...${data1[2]}ºC...${data1[0]}ºC`);
+
+const printForecast = function(arr){
+    let str = '';
+    for (let i = 0; i < arr.length; i++){
+        str += ` ... ${arr[i]}ºC in ${i + 1} days`
+    }
+    console.log(`p57_2:${str} ...`);
+}
+
+printForecast(data1);
+
+// or
+function printForecast(arr){
+    let str = '';
+    for (let i = 0; i < arr.length; i++){
+        str += ` ... ${arr[i]}ºC in ${i + 1} days`
+    }
+    console.log(`p57_2:${str} ...`);
+}
