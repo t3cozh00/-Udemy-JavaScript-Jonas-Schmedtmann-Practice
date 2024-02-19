@@ -66,5 +66,25 @@
 
 /***p72_JAVASCRIPT IN THE BROWSER: DOM AND EVENTS FUNDAMENTALS***********
 - REFACTORING OUR CODE: THE DRY PRINCIPLE
-   /// 
+   /// get rid of duplicate code
+    // in (guess > secretNumber) and (guess < secretNumber) senarios, most codes are the same
+     / use a technic called refactoring: means to structure the code without changing how it works
+     / first step: to identify the duplicate code
+     / second step:
+       //* when guess is wrong
+       else if (guess !=== secretNumber){
+       if (score > 1) {
+         //* use a turnery operator
+        document.querySelector( '.message').textContent = guess > secretNumber ? '📈 Too hight!' : '📈 Too hight!'; 
+        score--;
+        document.querySelector('.score').textContent = score;
+       } else {
+        document.querySelector('.message').textContent = '💥 You lost the game!';
+        document.querySelector('.score').textContent = 0;
+       }
+    // set the duplicate "document.querySelector('.message').textContent"
+     / create a function: 
+         const displayMessage = function (message){
+           document.querySelector('.message').textContent = message;
+         }
 */
