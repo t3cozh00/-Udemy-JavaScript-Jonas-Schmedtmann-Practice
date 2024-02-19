@@ -72,7 +72,7 @@
      / first step: to identify the duplicate code
      / second step:
        //* when guess is wrong
-       else if (guess !=== secretNumber){
+       else if (guess !== secretNumber){
        if (score > 1) {
          //* use a turnery operator
         document.querySelector( '.message').textContent = guess > secretNumber ? '📈 Too hight!' : '📈 Too hight!'; 
